@@ -1,0 +1,6 @@
+luces_comedor:
+  name: Luces Comedor
+  view: yes
+  entities:
+    - light.lampara_grande
+    - light.lampara_peque

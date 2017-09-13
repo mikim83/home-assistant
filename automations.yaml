@@ -1,0 +1,15 @@
+- action:
+  - alias: luces_comedor
+    data: {}
+    service: homeassistant.turn_on
+    entity_id: group.luces_comedor
+  alias: Lights on when home and 20 mins before sunset
+  condition:
+  - condition: state
+    entity_id: group.all_devices
+    state: home
+  id: '1505308594893'
+  trigger:
+  - event: sunset
+    offset: -00:20:00
+    platform: sun

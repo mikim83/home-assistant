@@ -1,0 +1,16 @@
+- platform: mqtt
+  name: "Lampara Grande"
+  state_topic: "stat/lamp_grande/POWER"
+  command_topic: "cmnd/lamp_grande/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
+- platform: mqtt
+  name: "Lampara Peque"
+  state_topic: "stat/lamp_peque/POWER"
+  command_topic: "cmnd/lamp_peque/POWER"
+  qos: 1
+  payload_on: "ON"
+  payload_off: "OFF"
+  retain: true
