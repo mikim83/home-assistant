@@ -1,0 +1,5 @@
+platform: mqtt
+state_topic: "owntracks/android_raka/android_raka"
+name: "Motorola Raka Battery"
+unit_of_measurement: "%"
+value_template: "{{ value_json.batt }}"

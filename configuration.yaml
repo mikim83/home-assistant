@@ -53,17 +53,18 @@ logbook:
 # Track the sun
 sun:
 
-# Weather prediction
-sensor:
-  - platform: yr
-
 # Text to speech
 tts:
   - platform: google
 
-
 device_tracker:
   - platform: owntracks
+
+# Google Home example configuration.yaml entry
+emulated_hue:
+  listen_port: 80
+  expose_by_default: true
+  # Google Home does not work on different ports.
 
 mqtt:
   broker: 192.168.2.2
@@ -89,8 +90,10 @@ mqtt:
 
 
 
+
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 light: !include lights.yaml
+sensor: !include_dir_list sensors/
 
