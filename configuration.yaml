@@ -1,6 +1,6 @@
 homeassistant:
   # Name of the location where Home Assistant is running
-  name: Home
+  name: HA
   # Location required to calculate the time the sun rises and sets
   latitude: !secret home_latitude
   longitude: !secret home_longitude
@@ -12,8 +12,6 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
 
-# Show links to resources in log and frontend
-#introduction:
 
 # Enables the frontend
 frontend:
@@ -88,6 +86,19 @@ mqtt:
     retain: true
 
 
+panel_iframe:
+  temp:
+    title: 'Temp'
+    url: 'http://www.meteocerdanyola.com/OutsideTemp.gif'
+    icon: mdi:temperature-celsius
+  humidity:
+    title: 'Humidity'
+    url: 'http://www.meteocerdanyola.com/OutsideHumidity.gif'
+    icon: mdi:water-percent
+  wind:
+    title: 'Wind'
+    url: 'http://www.meteocerdanyola.com/WindDirection.gif'
+    icon: mdi:weather-windy
 
 
 
@@ -96,4 +107,4 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 light: !include lights.yaml
 sensor: !include_dir_list sensors/
-
+zone: !include zones.yaml
