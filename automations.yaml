@@ -3,6 +3,11 @@
     data: {}
     service: homeassistant.turn_on
     entity_id: group.luces_comedor
+  - alias: notify_miki
+    service: notify.ios_miki
+    data:
+      title: Automation
+      message: Luces encendidas
   alias: Lights on when home and 20 mins before sunset
   condition:
   - condition: state
@@ -13,3 +18,23 @@
   - event: sunset
     offset: -00:20:00
     platform: sun
+- action:
+  - alias: luces_comedor
+    data: {}
+    service: homeassistant.turn_on
+    entity_id: group.luces_comedor
+  - alias: notify miki
+    data:
+      message: Luces encendidas
+      title: Automation
+    service: notify.ios_miki
+  alias: Lights when home and the sun is set
+  condition:
+  - after: sunset
+    after_offset: -00:10:00
+    condition: sun
+  id: '1505742545466'
+  trigger:
+  - entity_id: group.all_devices
+    platform: state
+    to: home
