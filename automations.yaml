@@ -11,7 +11,7 @@
   alias: Lights on when home and 20 mins before sunset
   condition:
   - condition: state
-    entity_id: group.all_devices
+    entity_id: group.mobile_phones
     state: home
   id: '1505308594893'
   trigger:
@@ -35,6 +35,6 @@
     condition: sun
   id: '1505742545466'
   trigger:
-  - entity_id: group.all_devices
+  - entity_id: group.mobile_phones
     platform: state
     to: home

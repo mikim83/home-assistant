@@ -1,0 +1,5 @@
+platform: mqtt
+name: "Home temperature"
+state_topic: "sensor/temperature"
+qos: 0
+unit_of_measurement: "ºC"

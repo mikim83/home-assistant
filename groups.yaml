@@ -4,3 +4,15 @@ luces_comedor:
   entities:
     - light.lampara_grande
     - light.lampara_peque
+mobile_phones:
+  name: Telefonos Moviles
+  view: no
+  entities:
+    - device_tracker.miki 
+    - device_tracker.android_raka_android_raka
+temp_hum:
+  name: Temp & Humidity
+  view: no
+  entities:
+    - sensor.temperature
+    - sensor.humidity

@@ -1,1 +1,5 @@
 group.luces_comedor: {}
+sensor.home_humidity:
+  icon: mdi:water-percent
+sensor.home_temperature:
+  icon: mdi:temperature-celsius
