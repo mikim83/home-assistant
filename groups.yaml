@@ -8,7 +8,7 @@ mobile_phones:
   name: Telefonos Moviles
   view: no
   entities:
-    - device_tracker.miki 
+    - device_tracker.iphone_miki_imiki 
     - device_tracker.android_raka_android_raka
 temp_hum:
   name: Temp & Humidity

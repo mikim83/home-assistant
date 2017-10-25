@@ -1,0 +1,5 @@
+platform: mqtt
+state_topic: "owntracks/iphone_miki/imiki"
+name: "Iphone Miki Battery"
+unit_of_measurement: "%"
+value_template: "{{ value_json.batt }}"
