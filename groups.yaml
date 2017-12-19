@@ -4,6 +4,11 @@ luces_comedor:
   entities:
     - light.lampara_grande
     - light.lampara_peque
+luces_irati:
+  name: Luces Habitacion Irati
+  view: no
+  entities:
+    - light.lampara_irati
 mobile_phones:
   name: Telefonos Moviles
   view: no
