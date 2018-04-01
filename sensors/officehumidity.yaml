@@ -1,0 +1,5 @@
+platform: mqtt
+name: "Office humidity"
+state_topic: "office/humidity"
+qos: 0
+unit_of_measurement: "%"

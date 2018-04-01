@@ -21,3 +21,9 @@ temp_hum:
   entities:
     - sensor.temperature
     - sensor.humidity
+offie_temp_hum:
+  name: Office Temp & Humidity
+  view: no
+  entities:
+    - office.temperature
+    - office.humidity

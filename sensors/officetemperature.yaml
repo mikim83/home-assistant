@@ -1,0 +1,5 @@
+platform: mqtt
+name: "Office temperature"
+state_topic: "office/temperature"
+qos: 0
+unit_of_measurement: "ºC"
