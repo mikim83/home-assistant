@@ -12,6 +12,9 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
 
+# Enables Cloud Component
+cloud:
+
 
 # Enables the frontend
 frontend:
@@ -39,7 +42,7 @@ discovery:
   ignore:
     - apple_tv
     - samsung_tv
-
+    - yamaha
 # Allows you to issue voice commands from the frontend in enabled browsers
 #conversation:
 
@@ -120,31 +123,18 @@ panel_iframe:
     url: 'http://www.meteocerdanyola.com/WindDirection.gif'
     icon: mdi:weather-windy
 
+google_assistant:
+  project_id: home-assistant-1a3a6
+  client_id: EcNLemsdV0hEDGPwk4sR2byBNWRwRkNax4orE4alM0gwDzVgmfWrrclGS1pb6Hicl8ozYoB272FFHDw2
+  access_token: gROml9IuqBO6gx50O3SSXmv2IyYUaIf71HxjEU5oH72fhmWRVgenQbR5HIWNxsAOYGolgAheQxAnu4k0
+  #agent_user_id: [a string to identify user]
+  #api_key: [a Homegraph API Key generated for the Google Actions project]
 
-#switch:
-#  - platform: command_line
-#    switches:
-#      camera_torch:
-#        friendly_name: Torch
-#        command_on: 'curl http://192.168.2.213/parameters?torch=1' 
-#        command_off: 'curl http://192.168.2.213/parameters?torch=0'
-#      camera_flip:
-#        friendly_name: Flip Camera
-#        command_on: 'curl http://192.168.2.213/parameters?camera=1' 
-#        command_off: 'curl http://192.168.2.213/parameters?camera=0'
+#  exposed_domains:
+#    - switch
+#    - light
+#    - group
 
-#camera:
-#  - platform: mjpeg
-#    name: iPhone4
-#    mjpeg_url: http://192.168.2.213/live
-
-#coinbase:
-#  api_key: !secret coinbase_api_key
-#  api_secret: !secret coinbase_api_secret 
-#  exchange_rate_currencies:
-#    - BTC
-#    - ETH
-#    - LTC
 
 
 
